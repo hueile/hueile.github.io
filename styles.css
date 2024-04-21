@@ -1,0 +1,110 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Comic Neue Regular'; /* Give a name to your font */
+  src: url('fonts/ComicNeue/ComicNeue-Regular.ttf') format('truetype'); /* Path to the font file */
+}
+
+@font-face {
+  font-family: 'Comic Neue Bold';
+  src: url('fonts/ComicNeue/ComicNeue-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Comic Neue Light';
+  src: url('fonts/ComicNeue/ComicNeue-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Comic Neue Italic';
+  src: url('fonts/ComicNeue/ComicNeue-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Comic Neue Bold Italic';
+  src: url('fonts/ComicNeue/ComicNeue-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Comic Neue Light Italic';
+  src: url('fonts/ComicNeue/ComicNeue-LightItalic.ttf') format('truetype');
+}
+
+header, nav, main, footer {
+  padding: 2.5vw;
+  text-align: center;
+}
+
+header {
+  font-family: "Comic Neue Bold", sans-serif;
+  background-color: #edf2fb;
+  background-image: url('img/banner.png');
+  background-position: center;
+  background-size: contain;
+  color: #ffffff;
+  padding: 100px 10px;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: 10vw;
+  text-shadow:
+    -1px -1px 0 #a4bde9,
+    1px -1px 0 #a4bde9,
+    -1px 1px 0 #a4bde9,
+    1px 1px 0 #a4bde9;
+  border-bottom: 5px solid #a4bde9;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 12vw; /* Fixed font size for small screens */
+  }
+}
+
+body {
+  font-family: 'Comic Neue Light', sans-serif;
+  background-color: #d7e3fc ; /* Pick a soft background color */
+  color: #333; /* Basic text color */
+}
+
+nav {
+  font-family: "Comic Neue Regular", sans-serif;
+  background: #ccdbfd;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d88080;
+  font-size: 3vw;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  min-height: 400px; /* Adjust as needed */
+  text-align: left;
+  font-size: 2.5vw;
+  background: #edf2fb; /* White background for the content area */
+}
+
+.container {
+  width: 80%; /* or any width you prefer */
+  margin: 20px auto; /* this centers the container */
+  padding: 10px 10px; /* optional padding to ensure content doesn't touch the edges */
+  border-radius: 25px;
+  background: #edf2fb;
+}
+
+footer {
+  background: #fcc;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
