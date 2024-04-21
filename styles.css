@@ -36,7 +36,7 @@
 }
 
 header, nav, main, footer {
-  padding: 2.5vw;
+  padding: 10px;
   text-align: center;
 }
 
@@ -50,13 +50,12 @@ header {
   padding: 100px 10px;
   text-align: center;
   letter-spacing: -1px;
-  font-size: 10vw;
+  font-size: 5vw;
   text-shadow:
     -1px -1px 0 #a4bde9,
     1px -1px 0 #a4bde9,
     -1px 1px 0 #a4bde9,
     1px 1px 0 #a4bde9;
-  border-bottom: 5px solid #a4bde9;
 }
 
 @media screen and (max-width: 600px) {
@@ -74,23 +73,27 @@ body {
 nav {
   font-family: "Comic Neue Regular", sans-serif;
   background: #ccdbfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
   text-decoration: none;
   color: #d88080;
   font-size: 3vw;
-  margin: 0 10px;
+  padding: 10px 15px;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  border-radius: 25px;
+  background: #c1d3fe;
 }
 
 main {
-  min-height: 400px; /* Adjust as needed */
+  min-height: 200px; /* Adjust as needed */
   text-align: left;
-  font-size: 2.5vw;
+  font-size: 2vw;
   background: #edf2fb; /* White background for the content area */
 }
 
